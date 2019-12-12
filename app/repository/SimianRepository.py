@@ -18,6 +18,7 @@ class SimianRepository(object):
                 'type': str(type_dna)
             }
         )
+        print('>> response', response)
 
     @staticmethod
     def get_stats():

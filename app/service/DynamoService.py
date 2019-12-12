@@ -1,6 +1,4 @@
 import boto3
-import settings
-import os
 
 
 class DynamoService(object):
