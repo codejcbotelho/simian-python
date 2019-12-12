@@ -8,9 +8,7 @@ O recurso de stats retorna a estatística de DNA's humanos, simíos e proporçã
 
 **/simian**
 
-O recurso valida o DNA informado no request, identificando se há repetições em diferentes sequencias da matriz para as sequências de A, T, C ou G. Retorna o http code 200 (símio) ou 403 (humano), além disso, retorna um JSON com a propriedade `simian` com `true` ou `false`.
-
-A API registra os DNA humanos ou simínios em uma tabela DynamoDB, onde o DNA é a chave. Ex: `"key": "AAAAA:CCCCC:GGGGG"` 
+O recurso valida o DNA informado no request, identificando se há repetições em diferentes sequencias da matriz para as sequências de A, T, C ou G. Retorna o http code 200 (símio) ou 403 (humano), além disso, retorna um JSON com a propriedade `simian` com `true` ou `false`. 
 
 `POST https://u85iq28rf0.execute-api.us-east-1.amazonaws.com/prd/simian`
 

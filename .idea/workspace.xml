@@ -4,7 +4,7 @@
     <list default="true" id="14de58d0-24b3-468d-ba8f-49ca35da80ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helper/Helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/helper/Helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_SimianService.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_SimianService.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,27 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unittests for test_SimianService.TestSimianService.test_DeveSerUmSimian" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="simian-python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_SimianService.TestSimianService.test_DeveSerUmSimian&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for test_SimianService.TestSimianService.test_DeveSerUmSimian" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -48,5 +69,23 @@
       <updated>1576110432058</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1897" height="287" key="GridCell.Tab.0.bottom" timestamp="1576119112393">
+      <screen x="67" y="27" width="3773" height="1053" />
+    </state>
+    <state width="1897" height="287" key="GridCell.Tab.0.bottom/67.27.3773.1053@67.27.3773.1053" timestamp="1576119112393" />
+    <state width="1897" height="287" key="GridCell.Tab.0.center" timestamp="1576119112392">
+      <screen x="67" y="27" width="3773" height="1053" />
+    </state>
+    <state width="1897" height="287" key="GridCell.Tab.0.center/67.27.3773.1053@67.27.3773.1053" timestamp="1576119112392" />
+    <state width="1897" height="287" key="GridCell.Tab.0.left" timestamp="1576119112391">
+      <screen x="67" y="27" width="3773" height="1053" />
+    </state>
+    <state width="1897" height="287" key="GridCell.Tab.0.left/67.27.3773.1053@67.27.3773.1053" timestamp="1576119112391" />
+    <state width="1897" height="287" key="GridCell.Tab.0.right" timestamp="1576119112392">
+      <screen x="67" y="27" width="3773" height="1053" />
+    </state>
+    <state width="1897" height="287" key="GridCell.Tab.0.right/67.27.3773.1053@67.27.3773.1053" timestamp="1576119112392" />
   </component>
 </project>
