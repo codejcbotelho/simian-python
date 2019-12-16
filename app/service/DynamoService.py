@@ -9,4 +9,5 @@ class DynamoService(object):
             'dynamodb',
             region_name="us-east-1"
         )
-        return resource.Table(table)
+        return resource
+        #return resource.Table(table)

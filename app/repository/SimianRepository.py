@@ -12,24 +12,27 @@ class SimianRepository(object):
     @staticmethod
     def put_simian(dna: str, type_dna: str):
         partition_key = Helper.generate_partition_key(dna)
-        response = g.table.put_item(
+        table = DynamoService.table('simian')
+        response = table.put_item(
             Item={
                 'dna': partition_key,
                 'type': str(type_dna)
             }
         )
-        print('>> response', response)
+        #return response
 
     @staticmethod
     def get_stats():
         stats = {'count_mutant_dna': 0, 'count_human_dna': 0, 'ratio': 0.0}
-        response = g.table.scan()
+        table = DynamoService.table('simian')
+        response = table.scan()
+        print('> response get_stats() >>', response)
         items = response['Items']
 
         for item in items:
-            if item['type'] == '1':
+            if item['type'] == TypeDNA.SIMIAN.value:
                 stats['count_mutant_dna'] += 1
-            elif item['type'] == '0':
+            elif item['type'] == TypeDNA.HUMAN.value:
                 stats['count_human_dna'] += 1
 
         if stats['count_mutant_dna'] > 0 and stats['count_human_dna'] > 0:

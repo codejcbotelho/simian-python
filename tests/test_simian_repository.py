@@ -2,6 +2,9 @@ import unittest
 import botocore.session
 from botocore.stub import Stubber
 import boto3
+from unittest.mock import patch
+
+from app.service.SimianService import SimianService
 
 
 session = botocore.session.get_session()
@@ -15,6 +18,11 @@ class TestSimianRepository(unittest.TestCase):
         pass
 
     def test_get_stats(self):
+        with patch.object(SimianService, "__init__", lambda x, y, z: None)
+            s = SimianService(['A', 'B'])
+            print('>>>', s.is_simian())
+
+    def test_get_statss(self):
         ddb = session.create_client(
             'dynamodb',
             region_name='us-east-1'
