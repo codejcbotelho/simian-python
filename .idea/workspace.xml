@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14de58d0-24b3-468d-ba8f-49ca35da80ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/run-eb.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ebignore" beforeDir="false" afterPath="$PROJECT_DIR$/.ebignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ebextensions/hooks/preinit/08upgradepip.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.elasticbeanstalk/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.pytest_cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.pytest_cache/CACHEDIR.TAG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.pytest_cache/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/stepwise" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repository/SimianRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repository/SimianRepository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/service/SimianService.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/SimianService.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/run-eb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bin/run-eb.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

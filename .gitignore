@@ -4,10 +4,9 @@
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
-.git
-
-htmlcov
-.pytest_cache
-htmlcov
-__pycache__
-virt
+/.git
+/htmlcov
+/__pycache__
+/virt
+/.elasticbeanstalk/
+/.pytest_cache/

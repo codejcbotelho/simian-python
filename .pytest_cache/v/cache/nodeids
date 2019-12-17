@@ -1,0 +1,5 @@
+[
+  "tests/test_helper.py::TestHelper::test_generate_partition_key",
+  "tests/test_application.py::TestApplication::test_is_simian",
+  "tests/test_simian_service.py::TestSimianService::test_is_simian"
+]
