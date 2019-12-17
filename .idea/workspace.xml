@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14de58d0-24b3-468d-ba8f-49ca35da80ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/simian-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/simian-python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ebignore" beforeDir="false" afterPath="$PROJECT_DIR$/.ebignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repository/SimianRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repository/SimianRepository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/service/DynamoService.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_application.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_simian_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_simian_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_simian_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_simian_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_stats_service.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,1 +1,5 @@
 virt
+.pytest_cache
+htmlcov
+bin
+tests
