@@ -1,16 +1,10 @@
 import settings
+import os
 from flask import Flask, jsonify, make_response, request, current_app, g
 from app.service.SimianService import SimianService
 from app.service.StatsService import StatsService
-from app.service.DynamoService import DynamoService
-import os
 
 application = Flask(__name__)
-
-
-@application.before_request
-def init():
-    g.table = DynamoService.table(os.environ['DYNAMO_TABLE'])
 
 
 @application.route('/simian', methods=['POST'])

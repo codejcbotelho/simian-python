@@ -1,50 +1,97 @@
 import unittest
 import botocore.session
-from botocore.stub import Stubber
 import boto3
-from unittest.mock import patch
-
-from app.service.SimianService import SimianService
-
-
-session = botocore.session.get_session()
+from unittest.mock import MagicMock
+from botocore.stub import Stubber
+from app.repository.SimianRepository import SimianRepository
 
 
 class TestSimianRepository(unittest.TestCase):
 
-    response = {'count_mutant_dna': 2, 'count_human_dna': 2, 'ratio': 1.0}
-
     def setUp(self) -> None:
-        pass
-
-    def test_get_stats(self):
-        with patch.object(SimianService, "__init__", lambda x, y, z: None)
-            s = SimianService(['A', 'B'])
-            print('>>>', s.is_simian())
-
-    def test_get_statss(self):
-        ddb = session.create_client(
+        self.expected_params = {
+            'TableName': 'table'
+        }
+        self.resource = botocore.session.get_session().create_client(
             'dynamodb',
             region_name='us-east-1'
         )
-        response = {
-            'ResponseMetadata': {
-                'RequestId': 'BSHVOTQP7UNJKAMSB4OD32NOPJVV4KQNSO5AEMVJF66Q9ASUAAJG',
-                'HTTPStatusCode': 200
-            }
-        }
 
-        with Stubber(ddb) as stubber:
-            stubber.add_response('get_stats', response, {'TableName': 'simian'})
-            ddb.describe_table(TableName='simian')
+    def test_get_stats_equals(self):
 
-    def test_qualquer(self):
-        user_id = 'user123'
-        get_item_params = {'TableName': ANY,
-                           'Key': {'id': user_id}}
-        get_item_response = {}
-        ddb_stubber.add_response('get_item', get_item_response, get_item_params)
+        mock_response = TestSimianRepository.generate_mock(1, 1)
+        stats_expected = {'count_mutant_dna': 1, 'count_human_dna': 1, 'ratio': 1.0}
 
-        result = main.get_user(user_id)
-        assert result is None
-        ddb_stubber.assert_no_pending_responses()
+        with Stubber(self.resource) as stub:
+            stub.add_response('scan', mock_response, self.expected_params)
+            response = self.resource.scan(
+                TableName='table'
+            )
+
+            simian_repository = SimianRepository()
+            simian_repository.table.scan = MagicMock(return_value=response)
+
+            self.assertEqual(SimianRepository.get_stats(), stats_expected)
+
+    def test_get_stats_with_more_mutants(self):
+
+        mock_response = TestSimianRepository.generate_mock(10, 5)
+        stats_expected = {'count_mutant_dna': 10, 'count_human_dna': 5, 'ratio': 2.0}
+
+        with Stubber(self.resource) as stub:
+            stub.add_response('scan', mock_response, self.expected_params)
+            response = self.resource.scan(
+                TableName='table'
+            )
+
+            simian_repository = SimianRepository()
+            simian_repository.table.scan = MagicMock(return_value=response)
+
+            self.assertEqual(SimianRepository.get_stats(), stats_expected)
+
+    def test_get_stats_with_more_humans(self):
+
+        mock_response = TestSimianRepository.generate_mock(1, 20)
+        stats_expected = {'count_mutant_dna': 1, 'count_human_dna': 20, 'ratio': 0.05}
+
+        with Stubber(self.resource) as stub:
+            stub.add_response('scan', mock_response, self.expected_params)
+            response = self.resource.scan(
+                TableName='table'
+            )
+
+            simian_repository = SimianRepository()
+            simian_repository.table.scan = MagicMock(return_value=response)
+
+            self.assertEqual(SimianRepository.get_stats(), stats_expected)
+
+    @classmethod
+    def generate_mock(cls, simian: int, human: int):
+        item = {'Items': []}
+
+        i = 0
+        while i < simian:
+            item['Items'].append({
+                'dna': {
+                    'S': 'A:A:A:A'
+                },
+                'type': {
+                    'S': '1'
+                }
+            })
+            i = i + 1
+
+        z = 0
+        while z < human:
+            item['Items'].append({
+                'dna': {
+                    'S': 'A:A:A:A'
+                },
+                'type': {
+                    'S': '0'
+                }
+            })
+            z = z + 1
+
+        return item
+

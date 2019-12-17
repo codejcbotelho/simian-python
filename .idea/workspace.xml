@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14de58d0-24b3-468d-ba8f-49ca35da80ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_stats_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/simian-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/simian-python.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/repository/SimianRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repository/SimianRepository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/service/DynamoService.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/DynamoService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/service/DynamoService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/SimianService.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_simian_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_application.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_simian_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_simian_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_simian_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_simian_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_stats_service.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,15 +46,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bin" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_stats_service.TestStatsService">
-    <configuration name="Unittests for test_helper.TestHelper.test_generate_partition_key" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for test_simian_repository.TestSimianRepository">
+    <configuration name="Unittests for test_simian_repository.TestSimianRepository" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="simian-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -59,7 +64,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_helper.TestHelper.test_generate_partition_key&quot;" />
+      <option name="_new_target" value="&quot;test_simian_repository.TestSimianRepository&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -121,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for test_simian_repository.TestSimianRepository" />
         <item itemvalue="Python tests.Unittests for test_stats_service.TestStatsService" />
-        <item itemvalue="Python tests.Unittests for test_stats_service.TestStatsService.test_stats" />
-        <item itemvalue="Python tests.Unittests for test_helper.TestHelper.test_generate_partition_key" />
         <item itemvalue="Python tests.Unittests for test_simian_service.TestSimianService" />
         <item itemvalue="Python tests.Unittests for test_simian_repository.TestSimianRepository.test_get_stats" />
+        <item itemvalue="Python tests.Unittests for test_stats_service.TestStatsService.test_stats" />
       </list>
     </recent_temporary>
   </component>
@@ -163,30 +168,43 @@
       <screen x="2732" y="0" width="1920" height="1080" />
     </state>
     <state x="3382" y="344" width="610" height="390" key="#com.intellij.fileTypes.FileTypeChooser/1366.312.1366.768/2732.0.1920.1080/0.339.1366.741@2732.0.1920.1080" timestamp="1576173914801" />
-    <state width="1897" height="347" key="GridCell.Tab.0.bottom" timestamp="1576532020098">
-      <screen x="2732" y="0" width="1920" height="1080" />
+    <state x="2563" y="267" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576546296850">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2563" y="267" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576546296850" />
+    <state x="2613" y="288" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576538410658">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2613" y="288" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576538410658" />
+    <state width="1897" height="196" key="GridCell.Tab.0.bottom" timestamp="1576548189717">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1897" height="347" key="GridCell.Tab.0.bottom/1366.312.1366.768/2732.0.1920.1080/0.339.1366.741@2732.0.1920.1080" timestamp="1576532020098" />
+    <state width="1897" height="196" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576548189717" />
     <state width="1897" height="287" key="GridCell.Tab.0.bottom/67.27.3773.1053@67.27.3773.1053" timestamp="1576119112393" />
-    <state width="1897" height="347" key="GridCell.Tab.0.center" timestamp="1576532020098">
-      <screen x="2732" y="0" width="1920" height="1080" />
+    <state width="1897" height="196" key="GridCell.Tab.0.center" timestamp="1576548189715">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1897" height="347" key="GridCell.Tab.0.center/1366.312.1366.768/2732.0.1920.1080/0.339.1366.741@2732.0.1920.1080" timestamp="1576532020098" />
+    <state width="1897" height="196" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576548189715" />
     <state width="1897" height="287" key="GridCell.Tab.0.center/67.27.3773.1053@67.27.3773.1053" timestamp="1576119112392" />
-    <state width="1897" height="347" key="GridCell.Tab.0.left" timestamp="1576532020097">
-      <screen x="2732" y="0" width="1920" height="1080" />
+    <state width="1897" height="196" key="GridCell.Tab.0.left" timestamp="1576548189714">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1897" height="347" key="GridCell.Tab.0.left/1366.312.1366.768/2732.0.1920.1080/0.339.1366.741@2732.0.1920.1080" timestamp="1576532020097" />
+    <state width="1897" height="196" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576548189714" />
     <state width="1897" height="287" key="GridCell.Tab.0.left/67.27.3773.1053@67.27.3773.1053" timestamp="1576119112391" />
-    <state width="1897" height="347" key="GridCell.Tab.0.right" timestamp="1576532020098">
-      <screen x="2732" y="0" width="1920" height="1080" />
+    <state width="1897" height="196" key="GridCell.Tab.0.right" timestamp="1576548189717">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1897" height="347" key="GridCell.Tab.0.right/1366.312.1366.768/2732.0.1920.1080/0.339.1366.741@2732.0.1920.1080" timestamp="1576532020098" />
+    <state width="1897" height="196" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576548189716" />
     <state width="1897" height="287" key="GridCell.Tab.0.right/67.27.3773.1053@67.27.3773.1053" timestamp="1576119112392" />
-    <state x="3181" y="174" key="SettingsEditor" timestamp="1576505809094">
-      <screen x="2732" y="0" width="1920" height="1080" />
+    <state x="2369" y="174" key="SettingsEditor" timestamp="1576538451455">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="3181" y="174" key="SettingsEditor/1366.312.1366.768/2732.0.1920.1080/0.339.1366.741@2732.0.1920.1080" timestamp="1576505809094" />
+    <state x="2369" y="174" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576538451455" />
     <state x="3259" y="241" width="866" height="596" key="find.popup" timestamp="1576499665326">
       <screen x="2732" y="0" width="1920" height="1080" />
     </state>
