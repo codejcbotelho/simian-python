@@ -1,5 +1,3 @@
-import settings
-import os
 import boto3
 
 from app.helper.Helper import Helper
@@ -11,7 +9,7 @@ class SimianRepository(object):
         'dynamodb',
         region_name="us-east-1"
     )
-    table = resource.Table(os.environ['DYNAMO_TABLE'])
+    table = resource.Table('simian')
 
     @staticmethod
     def put_simian(dna: str, type_dna: str):

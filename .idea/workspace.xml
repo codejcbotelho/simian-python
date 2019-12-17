@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14de58d0-24b3-468d-ba8f-49ca35da80ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bin/run-eb.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ebignore" beforeDir="false" afterPath="$PROJECT_DIR$/.ebignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/repository/SimianRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repository/SimianRepository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/service/SimianService.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/SimianService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,18 +161,19 @@
       <screen x="2732" y="0" width="1920" height="1080" />
     </state>
     <state x="3366" y="166" width="642" height="745" key="#Unittests_for_test_SimianService.TestSimianService.test_DeveSerUmSimian/1366.312.1366.768/2732.0.1920.1080/0.339.1366.741@2732.0.1920.1080" timestamp="1576156693120" />
-    <state x="3382" y="344" width="610" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576173914801">
-      <screen x="2732" y="0" width="1920" height="1080" />
+    <state x="2570" y="344" width="627" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576556465817">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="3382" y="344" width="610" height="390" key="#com.intellij.fileTypes.FileTypeChooser/1366.312.1366.768/2732.0.1920.1080/0.339.1366.741@2732.0.1920.1080" timestamp="1576173914801" />
+    <state x="2570" y="344" width="627" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576556465817" />
     <state x="2563" y="267" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576546296850">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2563" y="267" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576546296850" />
-    <state x="2613" y="288" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576538410658">
+    <state x="2613" y="288" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576554003089">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2613" y="288" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576538410658" />
+    <state x="2613" y="288" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576554003089" />
     <state width="1897" height="196" key="GridCell.Tab.0.bottom" timestamp="1576548189717">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -203,5 +211,9 @@
       <screen x="2732" y="0" width="1920" height="1080" />
     </state>
     <state x="3355" y="237" width="672" height="678" key="search.everywhere.popup/1366.312.1366.768/2732.0.1920.1080/0.339.1366.741@2732.0.1920.1080" timestamp="1576496618707" />
+    <state x="2605" y="371" width="540" height="336" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1576554849581">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2605" y="371" width="540" height="336" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1576554849581" />
   </component>
 </project>

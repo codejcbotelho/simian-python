@@ -1,6 +1,4 @@
-import os
 import re
-import settings
 
 from app.repository.SimianRepository import SimianRepository
 from app.enum.TypeDNA import TypeDNA

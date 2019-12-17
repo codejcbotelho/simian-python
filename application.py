@@ -1,6 +1,4 @@
-import settings
-import os
-from flask import Flask, jsonify, make_response, request, current_app, g
+from flask import Flask, jsonify, make_response, request
 from app.service.SimianService import SimianService
 from app.service.StatsService import StatsService
 

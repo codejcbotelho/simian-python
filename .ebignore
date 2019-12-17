@@ -3,3 +3,5 @@ virt
 htmlcov
 bin
 tests
+README.md
+serverless.yml
